@@ -25,13 +25,24 @@ class Salut {
 }
 
 $c = new Collection();
+
+/**
+ * Usage
+ *
+ * @return string
+ **/
+
 $c->addItem(new Salut("Ion", 14), "Ion");
 $c->addItem(new Salut("Ed", 37), "ed");
 $c->addItem(new Salut("Bob", 49), "bob");
 
 $c->deleteItem("Ion");
 
-//usage
+/**
+ * Exception handling
+ *
+ * @return exception
+ **/
 
 try {
     $c->getItem("Ion");
